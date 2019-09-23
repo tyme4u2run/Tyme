@@ -1,124 +1,540 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My CSS Tests</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Davyn's Life - It's My Life, My rules!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+
 </head>
 <body>
-	<div class="container">
-		<div class="box-1">
-			<h1>Hello World</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
 
-		<div class="box-2">
-			<h1>Goodbye World</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<a class="button" href="">Read More</a>
-		</div>
-
-		<div class="categories">
-			<h2>Categories</h2>
-			<ul>
-				<li><a href="#">Category 1</a></li>
-				<li><a href="#">Category 2</a></li>
-				<li><a href="#">Category 3</a></li>
-				<li><a href="#">Category 4</a></li>
-			</ul>
-		</div>
-
-		<form class="my-form">
-			<div class="form-group">
-				<label>Name: </label>
-				<input type="text" name="name">
-			</div>
-			<div class="form-group">
-				<label>Email: </label>
-				<input type="Email" name="email">
-			</div>
-			<div class="form-group">
-				<label>Message: </label>
-				<textarea name="message"></textarea>
-			</div>
-			<input class="button" type="submit" name="" value="Submit">
-		</form>
-
-		<div class="block">
-				<h3>Heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-		</div>
-
-		<div class="block">
-				<h3>Heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-		</div>
-
-		<div class="block">
-				<h3>Heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-		</div>
-
-		<div class="clr"></div>
-
-		<div id="main-block">
-				<h3>Heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-		</div>
-
-		<div id="sidebar">
-				<h3>Heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-		</div>
-
-		<div class="clr"></div>
-
-		<div class="p-box">
-			<h1>Hello</h1>
-			<h2>Goodbye</h2>
-		</div>
-
-		<ul class="my-list">
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
-			<li>List Item</li>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#Life">My Life</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#Team">My Family</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#portfolio">My Elephants</a>
+			</li>
 		</ul>
+	</div>
+</div>
+</nav>
 
-	</div><!-- ./container -->
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-traget="#slides" data-slide-to="0" class="active"></li>
+	<li data-traget="#slides" data-slide-to="1"></li>
+	<li data-traget="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="img/background.png">
+		<div class="carousel-caption">
+			<h1 class="display-2">My New Game</h1>
+			<a href="alphabet.html"><button type="button" class="btn btn-primary btn-lg">Play Now</button></a>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src="img/background2.png">
+	</div>
+	<div class="carousel-item">
+		<img src="img/background3.png">
+	</div>
+</div>
+</div>
 
-	<a class="fix-me button" href="">Hello</a>
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4"><a name="Life"></a>Life is short...<br>not even 2 years yet!</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p>The milestones are just flying by. Check out some of my best moments below as well as a few of my favorite things.</p>
+	</div>
+</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180125_100110.jpg"><br>Born, Baby, Born
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180207_123325.jpg"><br>Home at last!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180223_162530.jpg"><br>First gold
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20180225_090300_1.gif" target="_blank">
+			  	<img src="img/20180225_090300_1.jpg" data-orig="img/20180225_090300_1.jpg" class="gif-file card-img-top"></a><br>First haircut
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180225_123532.jpg"><br>Bald and beautiful
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180309-10-35-20-422.jpg"><br>Hi there!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180315_165728.jpg"><br>Just like mommy
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180324-14-53-56-461.jpg"><br>Sitting practice
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180326_102834.jpg"><br>Holding my own
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180330_160812.jpg"><br>Big sis
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180331_084242.jpg"><br>Head up!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20180405_135349_1.gif" target="_blank">
+			  	<img src="img/20180405_135349_1.jpg" data-orig="img/20180405_135349_1.jpg" class="gif-file card-img-top"></a><br>First workout
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180429_143217.jpg"><br>Back off!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20180501_082602_1.gif" target="_blank">
+			  	<img src="img/20180501_082602_1.jpg" data-orig="img/20180501_082602_1.jpg" class="gif-file card-img-top"></a><br>Revolution!!!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20180507_181207_1.gif" target="_blank">
+			  	<img src="img/20180507_181207_1.jpg" data-orig="img/20180507_181207_1.jpg" class="gif-file card-img-top"></a><br>Rollover practice
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20180609_095737_1.gif" target="_blank">
+			  	<img src="img/20180609_095737_1.jpg" data-orig="img/20180609_095737_1.jpg" class="gif-file card-img-top"></a><br>Perfect landing
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180611_130715.jpg"><br>Meet the grandparents
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180618_063921_1.gif" target="_blank">
+				<img src="img/20180618_063921_1.jpg" data-orig="img/20180618_063921_1.jpg" class="gif-file card-img-top"></a><br>First concert
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180618_124512_1.gif" target="_blank">
+				<img src="img/20180618_124512_1.jpg" data-orig="img/20180618_124512_1.jpg" class="gif-file card-img-top"></a><br>Big snake (ohhh!!!)
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180618_142558.jpg"><br>Which to choose first
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180622_102325.jpg"><br>Bad cut mommy!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180623_175050.jpg"><br>Practice makes perfect
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180630_143705.jpg"><br>What a beautiful girl!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180704_085807.jpg"><br>Bathtime mohawk
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180704_110450.jpg"><br>Ant bite! Bad mommy!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180709_101436_1.gif" target="_blank">
+				<img src="img/20180709_101436_1.jpg" data-orig="img/20180709_101436_1.jpg" class="gif-file card-img-top"></a><br>Balancing act
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180716_093445.jpg"><br>Sitting novice
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180720_132608.jpg"><br>Gimme a little taste
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180723_151844_1.gif" target="_blank">
+				<img src="img/20180723_151844_1.jpg" data-orig="img/20180723_151844_1.jpg" class="gif-file card-img-top"></a><br>Dancing to video
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180727_173240_1.gif" target="_blank">
+				<img src="img/20180727_173240_1.jpg" data-orig="img/20180727_173240_1.jpg" class="gif-file card-img-top"></a><br>First solid food
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180728_134722.jpg"><br>First swim
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180729_113246.jpg"><br>Sitting Expert!!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			<a href="img/gif/20180730_094124_1.gif" target="_blank">
+				<img src="img/20180730_094124_1.jpg" data-orig="img/20180730_094124_1.jpg" class="gif-file card-img-top"></a><br>Creeping practice
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180817_153225.jpg"><br>Sitting Pro!!!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180819_084419.jpg"><br>First car
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180824_094700.jpg"><br>Sweet face
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180830_084710.jpg"><br>Why?
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180831_103210.jpg"><br>Now makeup!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180902_121233.jpg"><br>Hair again!!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180906_150951.jpg"><br>Police! Help me!!!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180916_090544.jpg"><br>Hard rockin' child
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180918_073849.jpg"><br>First cold (ewww!)
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180920_152847.jpg"><br>Cuttin' those first teeth
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			<img class="card-img-top" src="img/20180922_154713.jpg"><br>First heads up crawl
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181009_112850_1.gif" target="_blank">
+			  <img src="img/20181009_112850_1.jpg" data-orig="img/20181009_112850_1.jpg" class="gif-file card-img-top"></a><br>Apple phone?
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181015_121546_1.gif" target="_blank">
+			  <img src="img/20181015_121546_1.jpg" data-orig="img/20181015_121546_1.jpg" class="gif-file card-img-top"></a><br>First pullup
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181017_140147_1.gif" target="_blank">
+			  <img src="img/20181017_140147_1.jpg" data-orig="img/20181017_140147_1.jpg" class="gif-file card-img-top"></a><br>Cruising expert
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181022_174956_1.gif" target="_blank">
+			  <img src="img/20181022_174956_1.jpg" data-orig="img/20181022_174956_1.jpg" class="gif-file card-img-top"></a><br>Clapping with song
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181108_090002_1.gif" target="_blank">
+			  <img src="img/20181108_090002_1.jpg" data-orig="img/20181108_090002_1.jpg" class="gif-file card-img-top"></a><br>Bubble fun
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181111_072632_1.gif" target="_blank">
+			  <img src="img/20181111_072632_1.jpg" data-orig="img/20181111_072632_1.jpg" class="gif-file card-img-top"></a><br>My sweet sister
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181114_150853_1.gif" target="_blank">
+			  <img src="img/20181114_150853_1.jpg" data-orig="img/20181114_150853_1.jpg" class="gif-file card-img-top"></a><br>Daddy, bounce me!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181115_133616_1.gif" target="_blank">
+			  <img src="img/20181115_133616_1.jpg" data-orig="img/20181115_133616_1.jpg" class="gif-file card-img-top"></a><br>First lemon
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181119_092158_1.gif" target="_blank">
+			  <img src="img/20181119_092158_1.jpg" data-orig="img/20181119_092158_1.jpg" class="gif-file card-img-top"></a><br>Balloons! Balloons!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181123_164604_1.gif" target="_blank">
+			  <img src="img/20181123_164604_1.jpg" data-orig="img/20181123_164604_1.jpg" class="gif-file card-img-top"></a><br>Feeding fish
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181125_171120_1.gif" target="_blank">
+			  <img src="img/20181125_171120_1.jpg" data-orig="img/20181125_171120_1.jpg" class="gif-file card-img-top"></a><br>Walking practice
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20181207_210753_1.gif" target="_blank">
+			  <img src="img/20181207_210753_1.jpg" data-orig="img/20181207_210753_1.jpg" class="gif-file card-img-top"></a><br>Higher daddy, higher!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img src="img/20181218_203148.jpg" alt="gif preset" class="preset-file card-img-top"><br>Red lantern!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190103_184229_1.gif" target="_blank">
+			  <img src="img/20190103_184229_1.jpg" data-orig="img/20190103_184229_1.jpg" class="gif-file card-img-top"></a><br>First step
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190122_193559_1.gif" target="_blank">
+			  <img src="img/20190122_193559_1.jpg" data-orig="img/20190122_193559_1.jpg" class="gif-file card-img-top"></a><br>No hands, daddy!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190131_154229_1.gif" target="_blank">
+			  <img src="img/20190131_154229_1.jpg" data-orig="img/20190131_154229_1.jpg" class="gif-file card-img-top"></a><br>Training for the fight
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190211_142749_1.gif" target="_blank">
+			  <img src="img/20190211_142749_1.jpg" data-orig="img/20190211_142749_1.jpg" class="gif-file card-img-top"></a><br>Mommy is sooo funny!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190213_151401_1.gif" target="_blank">
+			  <img src="img/20190213_151401_1.jpg" data-orig="img/20190213_151401_1.jpg" class="gif-file card-img-top"></a><br>Fun carousel ride
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img src="img/20190314_164857.jpg" alt="gif preset" class="preset-file card-img-top"><br>Running boo-boo
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190412_171449_1.gif" target="_blank">
+			  <img src="img/20190412_171449_1.jpg" data-orig="img/20190412_171449_1.jpg" class="gif-file card-img-top"></a><br>Shadow scare
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190415_142653_1.gif" target="_blank">
+			  <img src="img/20190415_142653_1.jpg" data-orig="img/20190415_142653_1.jpg" class="gif-file card-img-top"></a><br>Playing with sand is fun
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190420_120050_1.gif" target="_blank">
+			  <img src="img/20190420_120050_1.jpg" data-orig="img/20190420_120050_1.jpg" class="gif-file card-img-top"></a><br>First durian (yummie!)
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190504_175506_1.gif" target="_blank">
+			  <img src="img/20190504_175506_1.jpg" data-orig="img/20190504_175506_1.jpg" class="gif-file card-img-top"></a><br>First prison stay
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190504_214342_1.gif" target="_blank">
+			  <img src="img/20190504_214342_1.jpg" data-orig="img/20190504_214342_1.jpg" class="gif-file card-img-top"></a><br>DJ Grace makes me move!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190507_124421_1.gif" target="_blank">
+			  <img src="img/20190507_124421_1.jpg" data-orig="img/20190507_124421_1.jpg" class="gif-file card-img-top"></a><br>Naughty play accident
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190517_161244_1.gif" target="_blank">
+			  <img src="img/20190517_161244_1.jpg" data-orig="img/20190517_161244_1.jpg" class="gif-file card-img-top"></a><br>First tractor ride
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190523_192243_1.gif" target="_blank">
+			  <img src="img/20190523_192243_1.jpg" data-orig="img/20190523_192243_1.jpg" class="gif-file card-img-top"></a><br>Baby shark with props
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190605_180102_1.gif" target="_blank">
+			  <img src="img/20190605_180102_1.jpg" data-orig="img/20190605_180102_1.jpg" class="gif-file card-img-top"></a><br>Refining motor skills
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190625_095635_1.gif" target="_blank">
+			  <img src="img/20190625_095635_1.jpg" data-orig="img/20190625_095635_1.jpg" class="gif-file card-img-top"></a><br>Jack in the box... whatever
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190715_205919_1.gif" target="_blank">
+			  <img src="img/20190715_205919_1.jpg" data-orig="img/20190715_205919_1.jpg" class="gif-file card-img-top"></a><br>I love my mommy
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190718_135935.jpg"><br>My women
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190718_140331_1.gif" target="_blank">
+			  <img src="img/20190718_140331_1.jpg" data-orig="img/20190718_140331_1.jpg" class="gif-file card-img-top"></a><br>Real or not real?
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190729_153906_1.gif" target="_blank">
+			  <img src="img/20190729_153906_1.jpg" data-orig="img/20190729_153906_1.jpg" class="gif-file card-img-top"></a><br>Baby elephant ride
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190730_132224.jpg"><br>Big football match
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190731_142251.jpg"><br>Helping clean the house
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190801_180552_1.gif" target="_blank">
+			  <img src="img/20190801_180552_1.jpg" data-orig="img/20190801_180552_1.jpg" class="gif-file card-img-top"></a><br>Another fake elephant
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190812_104820_1.gif" target="_blank">
+			  <img src="img/20190812_104820_1.jpg" data-orig="img/20190812_104820_1.jpg" class="gif-file card-img-top"></a><br>Wowww! Real elephant!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190812_183754_1.gif" target="_blank">
+			  <img src="img/20190812_183754_1.jpg" data-orig="img/20190812_183754_1.jpg" class="gif-file card-img-top"></a><br>Mommy and me with elephants!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190816_133220.jpg"><br>I love my elephants
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190830_124214.jpg"><br>Mommy face massage
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190831_150420_1.gif" target="_blank">
+			  <img src="img/20190831_150420_1.jpg" data-orig="img/20190831_150420_1.jpg" class="gif-file card-img-top"></a><br>Zoo toys (awesome!)
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190901_131908_1.gif" target="_blank">
+			  <img src="img/20190901_131908_1.jpg" data-orig="img/20190901_131908_1.jpg" class="gif-file card-img-top"></a><br>Dance to the music
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190907_183153.jpg"><br>First knee boo-boo
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190915_102452_1.gif" target="_blank">
+			  <img src="img/20190915_102452_1.jpg" data-orig="img/20190915_102452_1.jpg" class="gif-file card-img-top"></a><br>Sweet elephant hug
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190915_195205.jpg"><br>Wiped out!
+		</div>
+		<div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+			  <img class="card-img-top" src="img/20190916_142042.jpg"><br>Don't turn your back on me!
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190916_175459_1.gif" target="_blank">
+			  <img src="img/20190916_175459_1.jpg" data-orig="img/20190916_175459_1.jpg" class="gif-file card-img-top"></a><br>Respectful young man
+		</div>
+		<div id="giflist" class="col-xs-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 clearfix">
+			  <a href="img/gif/20190916_175631_1.gif" target="_blank">
+			  <img src="img/20190916_175631_1.jpg" data-orig="img/20190916_175631_1.jpg" class="gif-file card-img-top"></a><br>Baby frog scare
+		</div>
+
+
+	</div>
+<hr class="my-4">
+</div>
+
+<!--- Fixed background -->
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Gangster Stare</h1>
+	</div>
+</div>
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- Meet the family -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4"><a name="Team"></a>Meet My Family</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+
+		<div class="col-xs-8 col-lg-6 col-xl-3">
+			<div class="card">
+				<img class="card-img-top" src="img/family2.png">
+				<div class="card-body">
+					<h4 class="card-title">Mommy</h4>
+					<p class="card-text">She is my everything! She puts up with alot but still loves me and I love her with all my heart.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-8 col-lg-6 col-xl-3">
+			<div class="card">
+				<img class="card-img-top" src="img/family1.png">
+				<div class="card-body">
+					<h4 class="card-title">Daddy</h4>
+					<p class="card-text">I miss him so much but I talk to him every day and night. I can't wait to see him again.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-8 col-lg-6 col-xl-3">
+			<div class="card">
+				<img class="card-img-top" src="img/family3.png">
+				<div class="card-body">
+					<h4 class="card-title">Uncle & Auntie</h4>
+					<p class="card-text">They are the best you can ask for. We go everywhere together and they treat me like a king.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-8 col-lg-6 col-xl-3">
+			<div class="card">
+				<img class="card-img-top" src="img/family4.png">
+				<div class="card-body">
+					<h4 class="card-title">Songsak, Kamkaew, and Grace</h4>
+					<p class="card-text">It's like having a another daddy, mommy, and a sister. It's so much fun when they come to stay with me.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12"><a name="portfolio"></a>
+			<h2>Where's My Elephants?</h2>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-12">
+
+<!-- Portfolio -->
+<section class="portfolio">
+  <img src="https://source.unsplash.com/200x200/?elephant" alt="">
+  <img src="https://source.unsplash.com/201x200/?elephant" alt="">
+  <img src="https://source.unsplash.com/202x200/?elephant" alt="">
+  <img src="https://source.unsplash.com/203x200/?elephant" alt="">
+  <img src="https://source.unsplash.com/200x201/?elephant" alt="">
+  <img src="https://source.unsplash.com/200x202/?elephant" alt="">
+  <img src="https://source.unsplash.com/200x203/?elephant" alt="">
+  <img src="https://source.unsplash.com/200x204/?elephant" alt="">
+  <img src="https://source.unsplash.com/201x201/?elephant" alt="">
+  <img src="https://source.unsplash.com/202x202/?elephant" alt="">
+  <img src="https://source.unsplash.com/203x203/?elephant" alt="">
+  <img src="https://source.unsplash.com/204x204/?elephant" alt="">
+</section>
+
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; Davyn's Life</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+$(function(){
+  $('#giflist a img').hover(function(){
+    // on mouse enter
+    var customdata = $(this).parent().attr('href');
+    $(this).attr('src',customdata);
+  }, function(){
+    // on mouse leave
+    $(this).attr('src',$(this).attr('data-orig'));
+  });
+});
+</script>
 
 </body>
 </html>
