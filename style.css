@@ -7,18 +7,6 @@ html, body {
   color: #222;
 }
 
-
-.btn-up {
-  text-decoration: none;
-	position: fixed;
-	top: 0px;
-	right: 11px;
-	display: block;
-  color: #3b5998;
-  font-size: 2rem;
-  z-index: 99;
-}
-
 #giflist {
   display: block;
   float: left;
