@@ -7,6 +7,18 @@ html, body {
   color: #222;
 }
 
+
+.btn-up {
+  text-decoration: none;
+	position: fixed;
+	top: 0px;
+	right: 11px;
+	display: block;
+  color: #3b5998;
+  font-size: 2rem;
+  z-index: 99;
+}
+
 #giflist {
   display: block;
   float: left;
@@ -129,12 +141,12 @@ hr.light100 {
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
-  }
-  }
+
+@media (min-width: 769px) {
+  .btn-up {
+  visibility: hidden;
+}
+}
 @media (max-width: 768px) {
 .carousel-caption {
   top: 45%;
@@ -154,9 +166,14 @@ hr.light100 {
 .display-4 {
   font-size: 200%;
 }
-.social a {
-  font-size: 2.5em;
-  padding: 1.2rem;
+.btn-up, a.btn-up:hover {
+  text-decoration: none;
+	position: fixed;
+	top: 0px;
+	right: 11px;
+	display: block;
+  color: #3b5998;
+  font-size: 2rem;
 }
 }
 @media (max-width: 576px) {
@@ -179,9 +196,14 @@ hr.light100 {
 .display-4 {
   font-size: 160%;
 }
-.social a {
-  font-size: 2em;
-  padding: .7rem;
+.btn-up, a.btn-up:hover {
+  text-decoration: none;
+	position: fixed;
+	top: 0px;
+	right: 11px;
+	display: block;
+  color: #3b5998;
+  font-size: 2rem;
 }
 }
 
