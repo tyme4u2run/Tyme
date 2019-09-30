@@ -25,6 +25,14 @@ html, body {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+.date-box {
+	position: absolute;
+	font-size: 1rem;
+	color: #fff;
+	text-shadow: 2px 1px #000000;
+	padding-left: 4px;
+}
+
 .navbar {
   padding: .8rem;
 }
