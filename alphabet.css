@@ -44,6 +44,7 @@ a:hover {
 .container > div {
 	display: inline-block;
 	text-align: left;
+    font-size: 	30px;
 }
 
 .fix-me2 {
