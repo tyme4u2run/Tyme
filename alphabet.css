@@ -31,3 +31,27 @@ a:hover {
 	padding: 0px 11px;
 	border: none;
 }
+
+.container { 
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	text-align: center;
+}
+
+.container > div {
+	display: inline-block;
+	text-align: left;
+}
+
+.fix-me2 {
+	text-decoration: none;
+    font-size: 	30px;
+}
+
+.button2 {
+    color: #3b5998;
+	border: none;
+}
